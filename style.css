@@ -270,3 +270,21 @@ header .btn {
 #section6 p{
     margin-bottom: 1rem;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--primary-color);
+}
+footer .logo{
+    max-width: 132px;
+}
+footer .social{
+    display: flex;
+    align-items: center;
+}
+.social img{
+    width: 45px;
+    height: 45px;
+}
