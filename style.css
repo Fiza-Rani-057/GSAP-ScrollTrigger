@@ -158,3 +158,28 @@ header .btn {
     line-height: 1.2;
     margin-bottom: 0.5rem;
 }
+
+#section3 {
+    min-height: 100vh;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#section3 .heading {
+    font-size: clamp(2rem, 12.5vw, 13.5rem);
+    text-align: center;
+    text-wrap: balance;
+    margin-bottom: 3vw;
+}
+#section3 video{
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 30px #73442536;
+}
+#section3 .content{
+    max-width: 500px;
+    margin-left: auto;
+}
+#section3 p{
+    margin-top: 1rem;
+}
