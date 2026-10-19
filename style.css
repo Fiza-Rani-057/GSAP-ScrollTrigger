@@ -1,47 +1,54 @@
 /* variables */
 :root {
-  --bg-color: #F5ECE4;
-  --primary-color: #734425;
-  --secondary-color: #C26819;
-  --black: #2E2E2E;
-  --heading-font: "Outfit", sans-serif;
+    --bg-color: #F5ECE4;
+    --primary-color: #734425;
+    --secondary-color: #C26819;
+    --black: #2E2E2E;
+    --heading-font: "Outfit", sans-serif;
 }
 
 /* global properties */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: var(--bg-color);
     color: var(--black);
-    font-family: "DM Sans",sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 18px;
     line-height: 1.5;
 }
-.btn{
+
+.btn {
     color: #fff;
     padding: 8px 20px;
     font-weight: 500;
 }
-.radius{
+
+.radius {
     border-radius: 10px;
 }
-a{
+
+a {
     text-decoration: none;
     display: inline-block;
 }
-img{
+
+img {
     width: 100%;
 }
+
 .w-full {
     width: calc(100% - 80px);
     max-width: 1440px;
     margin: auto;
 }
+
 /* for all headings */
-.heading{
+.heading {
     font-family: var(--heading-font);
     font-weight: 700;
     font-size: 6.5vw;
@@ -60,6 +67,7 @@ header {
     top: 0;
     z-index: 1;
 }
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -76,21 +84,24 @@ header .btn {
     background-color: var(--secondary-color);
     margin: 30px;
 }
-#main{
+
+#main {
     overflow: hidden;
 }
-#headphones{
- position: absolute;
- left: 50%;
- transform: translateX(-50%);
- top: 2.2%;
- width: 50vw;
- max-width: 660px;
- filter: drop-shadow(8px 35px 6px #00000025);
- will-change: transform;
- z-index: 9;
+
+#headphones {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.2%;
+    width: 50vw;
+    max-width: 660px;
+    filter: drop-shadow(8px 35px 6px #00000025);
+    will-change: transform;
+    z-index: 9;
 }
-.section1{
+
+.section1 {
     height: 100vh;
     width: 60vw;
     margin: auto;
@@ -99,9 +110,51 @@ header .btn {
     justify-content: center;
     text-align: center;
 }
-.section1 h1{
+
+.section1 h1 {
     font-size: 11.5vw;
     line-height: 0.85;
     margin-bottom: 0;
 }
 
+#section2 {
+    min-height: 100vh;
+    padding-top: 4vw;
+
+}
+
+#section2 .btn {
+    background-color: var(--black);
+    margin-top: 1.5rem;
+}
+
+#section2 .content-wrapper {
+    max-width: 500px;
+}
+
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.8rem;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.feature-wrapper {
+    min-width: 0;
+}
+
+.feature-box {
+    height: 100%;
+    border: 2px solid var(--black);
+    padding: 1.2rem 1.4rem;
+}
+
+.feature-name {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
