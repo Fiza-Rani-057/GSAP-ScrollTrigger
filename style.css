@@ -218,3 +218,20 @@ header .btn {
     bottom: 12%;
     transform: rotate(-12deg);
 }
+#section5{
+    text-align: center;
+    padding-top: 4vw;
+    padding-bottom: 8vw;
+    min-height: 94vh;
+}
+#section5 .product-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+}
+#section5 img{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(6px 15px 5px #00000018);
+}
