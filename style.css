@@ -171,15 +171,50 @@ header .btn {
     text-wrap: balance;
     margin-bottom: 3vw;
 }
-#section3 video{
+
+#section3 video {
     width: 100%;
     max-width: 500px;
     box-shadow: 0 0 30px #73442536;
 }
-#section3 .content{
+
+#section3 .content {
     max-width: 500px;
     margin-left: auto;
 }
-#section3 p{
+
+#section3 p {
     margin-top: 1rem;
+}
+
+#section4 {
+    min-height: 100vh;
+    position: relative;
+}
+
+#section4 img {
+    border: 10px solid #fff;
+    box-shadow: 0 0 32px #73442536;
+    position: absolute;
+}
+
+#section4 .img1 {
+    max-width: 260px;
+    top: 12%;
+    left: 3%;
+    transform: rotate(15deg);
+}
+
+#section4 .img2 {
+    max-width: 470px;
+    right: 4%;
+    top: 22%;
+    transform: rotate(14deg);
+}
+
+#section4 .img3 {
+    max-width: 340px;
+    left: 10%;
+    bottom: 12%;
+    transform: rotate(-12deg);
 }
