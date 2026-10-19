@@ -8,3 +8,15 @@
 }
 
 /* global properties */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--black);
+    font-family: "DM Sans",sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
