@@ -64,5 +64,19 @@ header .logo {
 
 header .btn {
     background-color: var(--secondary-color);
-    margin: 20px;
+    margin: 30px;
+}
+#main{
+    overflow: hidden;
+}
+#headphones{
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ top: 2.2%;
+ width: 40vw;
+ max-width: 660px;
+ filter: drop-shadow(8px 35px 6px #00000025);
+ will-change: transform;
+ z-index: 9;
 }
