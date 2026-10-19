@@ -235,3 +235,18 @@ header .btn {
     margin-bottom: 1.5rem;
     filter: drop-shadow(6px 15px 5px #00000018);
 }
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.product .name{
+ font-size: 24px;
+ font-weight: 500;
+}
+.product .price{
+    font-size: 24px;
+    font-weight: 700;
+    
+}
