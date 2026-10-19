@@ -40,6 +40,16 @@ img{
     max-width: 1440px;
     margin: auto;
 }
+/* for all headings */
+.heading{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 6.5vw;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    line-height: 0.95;
+    margin-bottom: 1.4rem;
+}
 
 /* local Properties */
 header {
@@ -74,9 +84,24 @@ header .btn {
  left: 50%;
  transform: translateX(-50%);
  top: 2.2%;
- width: 40vw;
+ width: 50vw;
  max-width: 660px;
  filter: drop-shadow(8px 35px 6px #00000025);
  will-change: transform;
  z-index: 9;
 }
+.section1{
+    height: 100vh;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.section1 h1{
+    font-size: 11.5vw;
+    line-height: 0.85;
+    margin-bottom: 0;
+}
+
