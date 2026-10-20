@@ -65,7 +65,8 @@ header {
     left: 50%;
     transform: translateX(-50%);
     top: 0;
-    z-index: 1;
+    z-index: 1000;
+
 }
 
 header nav {
@@ -255,36 +256,43 @@ header .btn {
     font-size: 24px;
     font-weight: 700;
 }
-#section6{
+
+#section6 {
     min-height: 100vh;
     display: flex;
     align-items: start;
     gap: 5vw;
     padding-bottom: 8vw;
 }
-#section6 img{
+
+#section6 img {
     box-shadow: 0 0 30px #73442536;
     width: 50%;
     height: auto;
 }
-#section6 p{
+
+#section6 p {
     margin-bottom: 1rem;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
     border-top: 2px solid var(--primary-color);
 }
-footer .logo{
+
+footer .logo {
     max-width: 132px;
 }
-footer .social{
+
+footer .social {
     display: flex;
     align-items: center;
 }
-.social img{
+
+.social img {
     width: 45px;
     height: 45px;
 }
