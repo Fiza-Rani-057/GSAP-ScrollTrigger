@@ -18,7 +18,7 @@ mm.add("(min-width: 991px)", () => {
             scrub: true,
             markers: false
         },
-        y: "92%",
+        y: "100%",
         x: "50%",
         width: "47vw",
         rotate: 90,
@@ -33,7 +33,7 @@ mm.add("(min-width: 991px)", () => {
             scrub: true,
             markers: false
         },
-        y: "340%",
+        y: "350%",
         x: "0%",
         width: "45vw",
         rotate: 35,
@@ -48,7 +48,7 @@ mm.add("(min-width: 991px)", () => {
             scrub: true,
             markers: false
         },
-        y: "400%",
+        y: "420%",
         width: "50vw",
         rotate: 0,
         ease: "power1.inOut",
@@ -251,163 +251,3 @@ mm.add("(min-width: 991px)", () => {
 
     });
 });
-
-
-
-/* ============================
-   DESKTOP: 1200px AND ABOVE
-============================ */
-mm.add("(min-width: 1200px)", () => {
-
-    gsap.set("#headphones", {
-        opacity: 1,
-        scale: 1
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section2",
-            start: "top bottom",
-            end: "center center",
-            scrub: 1
-        },
-        y: "92%",
-        x: "50%",
-        width: "47vw",
-        rotate: 90,
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section3",
-            start: "top bottom",
-            end: "bottom bottom",
-            scrub: 1
-        },
-        y: "340%",
-        x: "0%",
-        width: "45vw",
-        rotate: 35,
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section4",
-            start: "top bottom",
-            end: "bottom bottom",
-            scrub: 1
-        },
-        y: "400%",
-        width: "50vw",
-        rotate: 0,
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section5",
-            start: "top bottom",
-            end: "center bottom",
-            scrub: 1
-        },
-        y: "580%",
-        width: "37vw",
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section5",
-            start: "center bottom",
-            end: "bottom bottom",
-            scrub: 1
-        },
-        y: "870%",
-        width: "30vw",
-        ease: "none"
-    });
-
-});
-
-
-/* ============================
-   MOBILE: 600px AND BELOW
-============================ */
-mm.add("(max-width: 600px)", () => {
-
-    gsap.set("#headphones", {
-        width: "75vw",
-        x: 0,
-        y: 0,
-        rotate: 0,
-        scale: 1,
-        opacity: 1
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section2",
-            start: "top bottom",
-            end: "center center",
-            scrub: 1
-        },
-        y: "80%",
-        width: "70vw",
-        rotate: 30,
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section3",
-            start: "top bottom",
-            end: "bottom bottom",
-            scrub: 1
-        },
-        y: "200%",
-        width: "65vw",
-        rotate: 15,
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section4",
-            start: "top bottom",
-            end: "bottom bottom",
-            scrub: 1
-        },
-        y: "390%",
-        width: "70vw",
-        rotate: 0,
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section5",
-            start: "top bottom",
-            end: "center bottom",
-            scrub: 1
-        },
-        y: "500%",
-        width: "60vw",
-        ease: "none"
-    });
-
-    gsap.to("#headphones", {
-        scrollTrigger: {
-            trigger: "#section5",
-            start: "center bottom",
-            end: "bottom bottom",
-            scrub: 1
-        },
-        y: "650%",
-        width: "50vw",
-        ease: "none"
-    });
-});
-
- 
