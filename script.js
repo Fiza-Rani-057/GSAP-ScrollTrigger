@@ -34,6 +34,35 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         ease: "power1.inOut",
         immediateRender: false
     });
+    gsap.to("#headphones", {
+        scrollTrigger: {
+            trigger: "#section3",
+            start: "top bottom",
+            end: "bottom bottom",
+            scrub: true,
+            markers: false
+        },
+        y: "340%",
+        x: "0%",
+        width: "45vw",
+        rotate: 35,
+        ease: "power1.inOut",
+        immediateRender: false
+    });
+    gsap.to("#headphones", {
+        scrollTrigger: {
+            trigger: "#section4",
+            start: "top bottom",
+            end: "bottom bottom",
+            scrub: true,
+            markers: false
+        },
+        y: "400%",
+        width: "50vw",
+        rotate: 0,
+        ease: "power1.inOut",
+        immediateRender: false
+    });
 
 });
 
