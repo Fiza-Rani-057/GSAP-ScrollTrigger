@@ -191,6 +191,7 @@ header .btn {
 #section4 {
     min-height: 100vh;
     position: relative;
+    margin-bottom: 50px;
 }
 
 #section4 img {
@@ -207,7 +208,7 @@ header .btn {
 }
 
 #section4 .img2 {
-    max-width: 470px;
+    max-width: 400px;
     right: 4%;
     top: 22%;
     transform: rotate(14deg);
