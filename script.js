@@ -76,6 +76,47 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         ease: "power1.inOut",
         immediateRender: false
     });
+           gsap.to("#headphones", {
+        scrollTrigger: {
+            trigger: "#section5",
+            start: "top bottom",
+            end: "center bottom",
+            scrub: true,
+            markers: false
+        },
+        y: "580%",
+        width: "37vw",
+        ease: "power1.inOut",
+        immediateRender: false
+    });
+       gsap.to("#headphones", {
+        scrollTrigger: {
+            trigger: "#section5",
+            start: "top bottom",
+            end: "center bottom",
+            scrub: true,
+            markers: false
+        },
+        y: "580%",
+        width: "37vw",
+        ease: "power1.inOut",
+        immediateRender: false
+    });
+
+           gsap.to("#headphones", {
+        scrollTrigger: {
+            trigger: "#section5",
+            start: "center bottom",
+            end: "bottom bottom",
+            scrub: true,
+            markers: false
+        },
+        y: "870%",
+        width: "30vw",
+        ease: "power1.inOut",
+        immediateRender: false
+    });
+
 
 });
 
