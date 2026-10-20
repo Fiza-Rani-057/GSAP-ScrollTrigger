@@ -297,3 +297,17 @@ footer .social {
     width: 45px;
     height: 45px;
 }
+
+#headphones {
+    width: 50%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    #headphones {
+        width: 70%;
+        max-width: 350px;
+    }
+}

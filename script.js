@@ -182,6 +182,13 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         duration:1.5
         
     });
+    gsap.from('#headphones',{
+        opacity:0,
+        scale:0,
+        duration:1,
+        delay:1,
+        ease: "power1.inOut"
+    })
 });
 
 
