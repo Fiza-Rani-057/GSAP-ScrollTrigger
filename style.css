@@ -79,6 +79,7 @@ header nav {
 header .logo {
     max-width: 132px;
     margin: 20px;
+    z-index: 1000;
 }
 
 header .btn {
