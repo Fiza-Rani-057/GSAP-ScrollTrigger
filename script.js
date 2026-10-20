@@ -63,7 +63,7 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         ease: "power1.inOut",
         immediateRender: false
     });
-        gsap.to("#headphones", {
+    gsap.to("#headphones", {
         scrollTrigger: {
             trigger: "#section5",
             start: "top bottom",
@@ -76,7 +76,7 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         ease: "power1.inOut",
         immediateRender: false
     });
-           gsap.to("#headphones", {
+    gsap.to("#headphones", {
         scrollTrigger: {
             trigger: "#section5",
             start: "top bottom",
@@ -89,7 +89,7 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         ease: "power1.inOut",
         immediateRender: false
     });
-       gsap.to("#headphones", {
+    gsap.to("#headphones", {
         scrollTrigger: {
             trigger: "#section5",
             start: "top bottom",
@@ -103,7 +103,7 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         immediateRender: false
     });
 
-           gsap.to("#headphones", {
+    gsap.to("#headphones", {
         scrollTrigger: {
             trigger: "#section5",
             start: "center bottom",
@@ -116,8 +116,72 @@ gsap.matchMedia().add("(min-width: 991px)", () => {
         ease: "power1.inOut",
         immediateRender: false
     });
+    gsap.from('#section2 .content-wrapper', {
+        scrollTrigger: {
+            trigger: "#section2",
+            start: "-50% bottom",
+            end: "center center",
+            scrub: true,
+            markers: false
+        },
+        y: '140%',
+        ease: "power1.inOut",
 
+    });
+    gsap.from('#section3 .heading', {
+        scrollTrigger: {
+            trigger: "#section3",
+            start: "top bottom",
+            end: "center center",
+            scrub: true,
+            markers: false
+        },
+        y: '140%',
+        ease: "power1.inOut",
 
+    })
+    gsap.from('#section4 img', {
+        scrollTrigger: {
+            trigger: "#section4",
+            start: "top bottom",
+            end: "center center",
+            scrub: true,
+            markers: false
+        },
+        width: 0,
+        opacity: 0,
+        ease: "power1.inOut",
+
+    })
+        gsap.from('#section6 .content-wrapper', {
+        scrollTrigger: {
+            trigger: "#section6",
+            start: "top bottom",
+            end: "center center",
+            scrub: true,
+            markers: false
+        },
+        y:'40%',
+        duratio:2,
+        ease: "power1.inOut",
+    })
+    // text animation 
+    let split = SplitText.create('.section1 .heading',{
+        type:`chars, words , lines`,
+        mask:`lines`
+    });
+    gsap.from(split.chars, {
+        yPercent:()=> gsap.utils.random(-100, 100),
+        rotation:()=> gsap.utils.random(-30, 30),
+        autoAlpha:0,
+         ease: "back.out(1.5)",
+        stagger:{
+            amount:0.5,
+            from:'random'
+        },
+        duration:1.5
+        
+    });
 });
 
 
