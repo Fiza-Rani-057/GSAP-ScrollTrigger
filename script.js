@@ -256,28 +256,37 @@ mm.add("(min-width: 991px)", () => {
 
 // Dekstop Responsive 
 
-document.addEventListener("DOMContentLoaded", (event)=>{
+document.addEventListener("DOMContentLoaded", (event) => {
     const lenis = new Lenis();
-    lenis.on('scroll',ScrollTrigger.update);
-    gsap.ticker.add((time)=>{
-        lenis.ref(time*1000);
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => {
+        lenis.ref(time * 1000);
     });
 
     gsap.ticker.lagSmoothing(0);
+
+    function getPos(section, xPercent, yPercent) {
+        const rect = section.getBoundingClientRect()
+        const scrollY = window.scrollY || window.pageYOffset;
+        return {
+            x: rect.left + rect.width * xPercent - window.innerWidth / 2,
+            y: rect.top + scrollY + rect.height * yPercent - nwindow.innerWidth / 2
+        }
+    }
     scrollTrigger.matchMedia({
-        "(min-width:1025px)": function(){
+        "(min-width:1025px)": function () {
             const headphones = document.querySelector('#headphone');
             const s2 = document.querySelector('#section2');
             const s3 = document.querySelector('#section3');
             const s4 = document.querySelector('#section4');
             const s5 = document.querySelector('#section5');
 
-            gsap.to(headphones,{
-                scrollTrigger:{
-                    trigger:s2,
-                    start:"top bottom",
-                    end:"center center",
-                    scrub:1.2
+            gsap.to(headphones, {
+                scrollTrigger: {
+                    trigger: s2,
+                    start: "top bottom",
+                    end: "center center",
+                    scrub: 1.2
                 }
             })
         }
