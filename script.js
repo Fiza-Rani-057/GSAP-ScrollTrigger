@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const lenis = new Lenis();
     lenis.on('scroll', ScrollTrigger.update);
     gsap.ticker.add((time) => {
-        lenis.ref(time * 1000);
+        lenis.raf(time * 1000);
     });
 
     gsap.ticker.lagSmoothing(0);
@@ -270,25 +270,61 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const scrollY = window.scrollY || window.pageYOffset;
         return {
             x: rect.left + rect.width * xPercent - window.innerWidth / 2,
-            y: rect.top + scrollY + rect.height * yPercent - nwindow.innerWidth / 2
+            y: rect.top + scrollY + rect.height * yPercent - window.innerHeight / 2
         }
     }
-    scrollTrigger.matchMedia({
-        "(min-width:1025px)": function () {
-            const headphones = document.querySelector('#headphone');
-            const s2 = document.querySelector('#section2');
-            const s3 = document.querySelector('#section3');
-            const s4 = document.querySelector('#section4');
-            const s5 = document.querySelector('#section5');
 
-            gsap.to(headphones, {
-                scrollTrigger: {
-                    trigger: s2,
-                    start: "top bottom",
-                    end: "center center",
-                    scrub: 1.2
-                }
-            })
-        }
-    })
+    gsap.matchMedia().add("(min-width:1025px)", function () {
+        const headphones = document.querySelector('#headphone');
+        const s2 = document.querySelector('#section2');
+        const s3 = document.querySelector('#section3');
+        const s4 = document.querySelector('#section4');
+        const s5 = document.querySelector('#section5');
+
+        gsap.to(headphones, {
+            scrollTrigger: {
+                trigger: s2,
+                start: "top bottom",
+                end: "center center",
+                scrub: 1.2
+            },
+            x: () => getPos(s2, 0.78, 0.35).x,
+            y: () => getPos(s2, 0.78, 0.35).y,
+            width: "32vh",
+            rotate: 90,
+            ease: "power1.inOut",
+            immediateRender: false
+        });
+
+        gsap.to('#headphone', {
+            scrollTrigger: {
+                trigger: s3,
+                start: "top bottom",
+                end: "bottom bottom",
+                scrub: 1.2
+            },
+            x: () => getPos(s3, 0.5, 0.6).x,
+            y: () => getPos(s3, 0.5, 0.6).y,
+            width:"32vw",
+            rotatae:35,
+             ease: "power1.inOut",
+            immediateRender: false
+        });
+          gsap.to('#headphone', {
+            scrollTrigger: {
+                trigger: s4,
+                start: "top bottom",
+                end: "center center",
+                scrub: 1.2
+            },
+            x: () => getPos(s4, 0.5, 0.5).x,
+            y: () => getPos(s4, 0.5, 0.5).y,
+            width:"35vw",
+            rotatae:0,
+             ease: "power1.inOut",
+            immediateRender: false
+        });
+
+    });
 });
+
