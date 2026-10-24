@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     gsap.matchMedia().add("(min-width:1025px)", function () {
-        const headphones = document.querySelector('#headphone');
+        const headphones = document.querySelector('#headphones');
         const s2 = document.querySelector('#section2');
         const s3 = document.querySelector('#section3');
         const s4 = document.querySelector('#section4');
@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             immediateRender: false
         });
 
-        gsap.to('#headphone', {
+        gsap.to('#headphones', {
             scrollTrigger: {
                 trigger: s3,
                 start: "top bottom",
@@ -306,11 +306,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
             x: () => getPos(s3, 0.5, 0.6).x,
             y: () => getPos(s3, 0.5, 0.6).y,
             width:"32vw",
-            rotatae:35,
+            rotate:35,
              ease: "power1.inOut",
             immediateRender: false
         });
-          gsap.to('#headphone', {
+          gsap.to('#headphones', {
             scrollTrigger: {
                 trigger: s4,
                 start: "top bottom",
@@ -320,7 +320,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
             x: () => getPos(s4, 0.5, 0.5).x,
             y: () => getPos(s4, 0.5, 0.5).y,
             width:"35vw",
-            rotatae:0,
+            rotate:0,
+             ease: "power1.inOut",
+            immediateRender: false
+        });
+     gsap.to('#headphones', {
+            scrollTrigger: {
+                trigger: s5,
+                start: "top bottom",
+                end: "center center",
+                scrub: 1.2
+            },
+            x: () => getPos(s5, 0.5, 0.43).x,
+            y: () => getPos(s5, 0.5, 0.43).y,
+            width:"300px",
              ease: "power1.inOut",
             immediateRender: false
         });
